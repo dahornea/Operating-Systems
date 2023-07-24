@@ -1,0 +1,328 @@
+
+*** These modified files were found in JOE when it aborted on Wed Apr 13 18:40:22 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+/home/alex/Desktop/Shell/shell/boian/7.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Wed Apr 13 18:45:18 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+
+*** File 'dorian1.sh'
+#!/bin/bash
+
+for user in &(cat who.fake | awk '{print $1}')
+do
+   proc=$(cat ps.fake | grep -Ec "^$(user)")
+   echo "$user $proc"
+done
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc
+
+*** These modified files were found in JOE when it aborted on Wed Apr 13 18:45:20 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+/home/alex/Desktop/Shell/shell/boian/1.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Wed Apr 13 18:49:52 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '/home/alex/Desktop/Shell/shell/boian/1.sh'
+#!/bin/bash
+
+for user in $(cat who.fake | awk '{print $1}')
+do
+    proc=$(cat ps.fake | grep -Ec "^${user}")
+    echo "$user $proc"
+done
+
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** File '(Unnamed)'
+/home/alex/Desktop/Shell/shell/boian/1.sh
+
+*** These modified files were found in JOE when it aborted on Wed Apr 13 18:52:47 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+
+*** File 'dorian1.sh'
+#!/bin/bash
+
+for user in $(cat who.fake | awk '{print $1}')
+do
+   proc=$(cat ps.fake | grep -Ec "^{user}")
+   echo "$user $proc"
+done
+
+
+
+*** File '* Startup Log *'
+Processing '/etc/joe/joerc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/joerc
+
+*** These modified files were found in JOE when it aborted on Wed Apr 13 21:30:43 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+/home/alex/Desktop/Shell/shell/boian/1.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Wed Apr 13 21:30:47 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/Shell/shell/boian/2.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Wed Apr 13 22:10:20 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/1.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Wed Apr 13 22:17:27 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/2.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:04:08 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/4.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:04:10 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/3.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:11:13 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/5.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:13:55 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/5.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:14:08 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/4.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:14:42 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/3.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:17:20 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/7.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:17:27 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/6.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:18:14 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/8.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:30:37 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/10.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Thu Apr 14 00:40:48 2022
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+dorian1.sh
+/home/alex/Desktop/shell/boian/9.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Mon Jul 24 20:25:27 2023
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+problem2.c
+problem2.c
+problem2.c
+problem2.c
+problem3.c
+problem3.c
+problem3.c
+problem3.c
+1.c
+1.c
+/home/alex/Desktop/os/shell/boian/dorian1.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc
+
+*** These modified files were found in JOE when it aborted on Mon Jul 24 20:25:38 2023
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+problem2.c
+problem2.c
+problem2.c
+problem2.c
+problem3.c
+problem3.c
+problem3.c
+problem3.c
+1.c
+1.c
+/home/alex/Desktop/os/shell/boian/6.sh
+
+*** File '* Startup Log *'
+Processing '/etc/joe/jmacsrc'...
+Processing '/etc/joe/ftyperc'...
+Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/jmacsrc

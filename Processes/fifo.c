@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <string.h>
+
+int main(int argc, char** argv){
+   char * name = argv[1];
+   int var =  mkfifo(name, 0600);
+   if(var < 0){
+       perror("MKfifo wasnt created");
+       exit(1);
+   }
+   int fd = open(name, O_WRONLY);
+   if(fd < 0){
+     perror("The fifo was not open");
+     exit(2);
+    
+   }
+   int length = strlen(argv[2]);
+   write(fd, &length, sizeof(int));
+   write(fd, argv[2], strlen(argv[2]) * sizeof(char));
+   
+   return 0;         
+}

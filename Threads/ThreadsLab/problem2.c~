@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+int i = 0;
+void *thread(void * arg){
+    int j;
+    for(j = 0; j <= 10000; j++){
+        i = i+1;
+    }
+    return NULL;
+}
+
+int main(int argc, char** argv){
+    pthread_t t[1000];
+    int j;
+    for(j = 0; j < 1000; j++){
+        pthread_create(&t[j], NULL, thread, NULL);
+    }
+    for(j = 0; j < 1000; j++){
+        pthread_join(t[j], NULL); 
+    }
+    printf("i=%d\n", i);
+    return 0;
+    
+}

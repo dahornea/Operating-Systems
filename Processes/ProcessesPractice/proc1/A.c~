@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+
+int main(int argc, char** argv){
+    char fileName[16];
+    printf("Input name: ");
+    scanf("%15s", fileName);
+    FILE* file = fopen(fileName, "r");
+    char* fifoName = argv[1];
+    mkfifo(fifoName, 0600);
+    int fifo = open(fifoName, O_WRONLY);
+    
+    char c;
+    while((c = fgetc(file)) != EOF){
+        if(c >= '0' && c <= '9'){
+            write(fifo, &c, sizeof(char));
+        }
+    }
+    fclose(file);
+    close(fifo);
+    return 0;
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/stat.h>
+
+int main(int argc, char **argv)
+{
+    // READ INPUT FILE NAME
+    // (THAT CONTAINS THE RANDOM CHARS AND DIGITS)
+    char fileName[16];
+    printf("Input name: ");
+    
+    // OPEN THE FILE
+    scanf("%15s", fileName);
+    FILE* file = fopen(fileName, "r");
+    
+    // SET THE FIFO NAME TO THE FIRST ARGUMENT
+    // AND CREATE THE FIFO, THEN OPEN IT
+    char* fifoName = argv[1];
+    mkfifo(fifoName, 0600); // 6 = 4 + 2 = R + W FOR USER
+    int fifo = open(fifoName, O_WRONLY);
+    
+    // READ CHAR BY CHAR AND WRITE DIGITS TO FIFO
+    char c;    
+    while ((c = fgetc(file)) != EOF)
+    {
+        if (c >= '0' && c <= '9')
+        {
+            write(fifo, &c, sizeof(char));
+        }
+    }
+    
+    // CLOSE EVERYTHING TO PREVENT LEAKS
+    fclose(file);
+    close(fifo);
+
+    return 0;
+}
